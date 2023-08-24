@@ -12,10 +12,8 @@ class Question(models.Model):
         return str(self.question_text)
 
     def was_published_recently(self):
-        """return is published recent or not"""
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
-
-    objects = models.Manager()
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now
 
 
 class Choice(models.Model):
