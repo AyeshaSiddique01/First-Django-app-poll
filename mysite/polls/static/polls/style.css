@@ -1,0 +1,11 @@
+.list {
+    color: #dcd3d3;
+    font-size: 25px;
+}
+body {
+    background: white url("images/background3.jpeg") no-repeat;
+    background-size: cover;
+}
+h1 {
+    color : #dcd3d3;
+}
